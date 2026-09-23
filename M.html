@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>For Maryam 🤍</title>
+
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:"Cairo",sans-serif;
+
+    background:#07050d;
+
+    color:white;
+
+    overflow-x:hidden;
+}
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-5;
+
+    background:
+
+    radial-gradient(
+        circle at 15% 20%,
+        rgba(255,117,177,.18),
+        transparent 27%
+    ),
+
+    radial-gradient(
+        circle at 85% 35%,
+        rgba(124,92,255,.17),
+        transparent 28%
+    ),
+
+    radial-gradient(
+        circle at 50% 90%,
+        rgba(53,211,190,.10),
+        transparent 30%
+    ),
+
+    linear-gradient(
+        135deg,
+        #05040a,
+        #12091a 48%,
+        #070b12
+    );
+}
+
+
+/* النجوم */
+
+.stars{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-4;
+
+    pointer-events:none;
+
+    overflow:hidden;
+}
+
+.stars::before,
+.stars::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    radial-gradient(
+        circle,
+        rgba(255,255,255,.9) 1px,
+        transparent 1.5px
+    );
+
+    background-size:90px 90px;
+
+    opacity:.22;
+
+    animation:starsMove 25s linear infinite;
+}
+
+.stars::after{
+
+    background-size:150px 150px;
+
+    opacity:.12;
+
+    animation-duration:40s;
+}
+
+@keyframes starsMove{
+
+    to{
+        transform:translateY(90px);
+    }
+
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section{
+
+    min-height:100vh;
+
+    padding:70px 24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.m{
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:155px;
+
+    line-height:1;
+
+    color:transparent;
+
+    -webkit-text-stroke:
+        1.8px rgba(255,255,255,.86);
+
+    text-shadow:
+
+        0 0 12px
+        rgba(255,116,181,.9),
+
+        0 0 45px
+        rgba(255,116,181,.45),
+
+        0 0 90px
+        rgba(122,88,255,.3);
+
+    animation:floatM 4s ease-in-out infinite;
+}
+
+@keyframes floatM{
+
+    50%{
+        transform:
+            translateY(-8px)
+            scale(1.035);
+    }
+}
+
+
+.eyebrow{
+
+    color:#b7a8bc;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+    margin-top:10px;
+}
+
+
+h1{
+
+    font-size:50px;
+
+    margin-top:5px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #fff,
+            #ffb0d7,
+            #cbbdff,
+            #fff
+        );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+}
+
+
+.lead{
+
+    max-width:650px;
+
+    color:#d7ceda;
+
+    line-height:2.1;
+
+    margin-top:18px;
+
+    font-size:17px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.btn{
+
+    margin-top:32px;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,143,202,.16),
+            rgba(134,111,255,.12)
+        );
+
+    color:white;
+
+    font:
+        600 14px
+        Cairo;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 40px
+        rgba(255,105,180,.13);
+
+    transition:.3s;
+}
+
+.btn:hover{
+
+    transform:
+        translateY(-3px)
+        scale(1.03);
+
+    box-shadow:
+        0 14px 45px
+        rgba(255,105,180,.25);
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.card{
+
+    width:min(760px,100%);
+
+    padding:34px 24px;
+
+    border-radius:28px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.018)
+        );
+
+    box-shadow:
+
+        0 25px 80px
+        rgba(0,0,0,.25),
+
+        inset 0 0 35px
+        rgba(255,105,180,.025);
+
+    backdrop-filter:blur(12px);
+}
+
+
+.heart{
+
+    font-size:66px;
+
+    color:#ff9fce;
+
+    text-shadow:
+        0 0 24px
+        rgba(255,105,180,.65);
+
+    animation:beat 2.2s infinite;
+}
+
+@keyframes beat{
+
+    50%{
+        transform:scale(1.13);
+    }
+}
+
+
+h2{
+
+    font-size:38px;
+
+    margin:16px 0 18px;
+}
+
+
+.text{
+
+    color:#d2cbd6;
+
+    line-height:2.2;
+
+    font-size:16px;
+}
+
+.text p{
+
+    margin:11px 0;
+}
+
+
+.highlight{
+
+    color:#ffb4d9 !important;
+
+    font-weight:700;
+
+    font-size:18px;
+
+    margin-top:22px !important;
+}
+
+
+/* =========================
+   CHAPTER
+========================= */
+
+.chapter{
+
+    background:
+
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(124,92,255,.08),
+            transparent 50%
+        );
+}
+
+
+.badge{
+
+    width:112px;
+
+    height:112px;
+
+    border-radius:50%;
+
+    display:grid;
+
+    place-items:center;
+
+    font:
+        58px
+        "Playfair Display";
+
+    border:
+        1px solid
+        rgba(255,255,255,.2);
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,144,203,.14),
+            rgba(116,91,255,.06)
+        );
+
+    box-shadow:
+
+        0 0 45px
+        rgba(255,105,180,.2);
+}
+
+
+.chapter h2{
+
+    font-family:
+        "Playfair Display";
+
+    background:
+
+        linear-gradient(
+            90deg,
+            #fff,
+            #ffabd5,
+            #c7bbff
+        );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+}
+
+
+.quote{
+
+    max-width:520px;
+
+    margin-top:26px;
+
+    padding:24px;
+
+    border-radius:22px;
+
+    color:#eee;
+
+    line-height:2.15;
+
+    background:
+        rgba(255,255,255,.04);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+}
+
+
+/* =========================
+   MOTIVATION CARDS
+========================= */
+
+.reasons{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:14px;
+
+    width:min(900px,100%);
+
+    margin-top:28px;
+}
+
+
+.reason{
+
+    padding:20px 14px;
+
+    border-radius:20px;
+
+    background:
+        rgba(255,255,255,.035);
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    min-height:155px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+}
+
+
+.reason b{
+
+    font-size:17px;
+
+    color:#ffd0e6;
+
+    margin-bottom:8px;
+}
+
+
+.reason span{
+
+    font-size:13px;
+
+    color:#aaa;
+
+    line-height:1.9;
+}
+
+
+/* =========================
+   SECRET
+========================= */
+
+.secret{
+
+    margin-top:24px;
+
+    color:#ffb5d9;
+
+    line-height:2;
+
+    opacity:0;
+
+    transform:translateY(15px);
+
+    transition:.8s;
+}
+
+.secret.show{
+
+    opacity:1;
+
+    transform:none;
+}
+
+
+/* =========================
+   FINAL
+========================= */
+
+.final .m2{
+
+    font:
+        120px
+        "Playfair Display";
+
+    color:transparent;
+
+    -webkit-text-stroke:
+        1px #ff9dcc;
+
+    text-shadow:
+        0 0 38px
+        rgba(255,105,180,.55);
+}
+
+
+.final p{
+
+    max-width:680px;
+
+    color:#d1cad5;
+
+    line-height:2.2;
+
+    margin:6px 0;
+}
+
+
+.gold{
+
+    color:#ffc8df !important;
+
+    font-size:19px;
+
+    font-weight:700;
+
+    margin-top:24px !important;
+}
+
+
+.signature{
+
+    margin-top:34px;
+
+    color:#8f8795;
+
+    font:
+        italic 16px
+        "Playfair Display";
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.float-heart{
+
+    position:fixed;
+
+    bottom:-30px;
+
+    z-index:30;
+
+    pointer-events:none;
+
+    color:#ff9dcc;
+
+    text-shadow:
+        0 0 12px
+        rgba(255,105,180,.8);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:700px){
+
+    .m{
+        font-size:120px;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    h2{
+        font-size:30px;
+    }
+
+    .lead{
+        font-size:15px;
+    }
+
+    .reasons{
+        grid-template-columns:1fr;
+    }
+
+    .final .m2{
+        font-size:100px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="stars"></div>
+
+
+<!-- =========================
+     البداية
+========================= -->
+
+<section>
+
+    <div class="m">
+        M
+    </div>
+
+    <div class="eyebrow">
+        A LITTLE MESSAGE FOR YOU
+    </div>
+
+    <h1>
+        مريم
+    </h1>
+
+    <p class="lead">
+
+        مش كل طريق بدأناه
+        هو الطريق اللي كنا بنتمناه...
+
+        <br>
+
+        بس أحيانًا الطريق الجديد
+        بيكون بداية لحكاية أجمل
+        مما تخيلنا.
+
+    </p>
+
+    <button class="btn"
+            onclick="openSection('message')">
+
+        افتحي رسالتي 🤍
+
+    </button>
+
+</section>
+
+
+
+<!-- =========================
+     الرسالة
+========================= -->
+
+<section id="message">
+
+    <div class="card">
+
+        <div class="heart">
+            ♡
+        </div>
+
+        <h2>
+            مريم...
+        </h2>
+
+        <div class="text">
+
+            <p>
+                عارف إن دخول جامعة غير الجامعة
+                اللي كنتِ بتتمنيها ممكن يكون إحساسه صعب.
+            </p>
+
+            <p>
+                وممكن في البداية تحسي إن جزء من الحلم
+                اتغير أو إنك مشيتي في طريق
+                مكنتيش مخططاله.
+            </p>
+
+            <p class="highlight">
+
+                بس تغيير المكان مش معناه أبدًا
+                إنك لازم تغيّري حلمك.
+
+            </p>
+
+            <p>
+
+                إنتِ لسه نفس الشخص،
+                بنفس قدراتك،
+                وبنفس الفرصة إنك تعملي
+                حاجة تفتخري بيها.
+
+            </p>
+
+        </div>
+
+
+        <button class="btn"
+                onclick="openSection('chapter')">
+
+            كمّلي...
+            لسه في كلام كتير 🤍
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     التحفيز
+========================= -->
+
+<section id="chapter"
+         class="chapter">
+
+    <div class="badge">
+        M
+    </div>
+
+    <h2>
+        Your New Chapter
+    </h2>
+
+    <p class="text">
+
+        دي مش نهاية الحكاية...
+        دي صفحة جديدة.
+
+    </p>
+
+
+    <div class="quote">
+
+        يمكن مش كل حاجة بنتمناها
+        بتحصل في الوقت أو المكان
+        اللي اخترناه،
+
+        <br>
+
+        لكن دايمًا نقدر نختار
+        إزاي نكمّل.
+
+    </div>
+
+
+    <div class="reasons">
+
+
+        <div class="reason">
+
+            <b>
+                خليكي واثقة
+            </b>
+
+            <span>
+                النتيجة اللي وصلتي لها
+                مش بتحدد قيمتك
+                ولا آخر الطريق.
+            </span>
+
+        </div>
+
+
+        <div class="reason">
+
+            <b>
+                ابدئي من مكانك
+            </b>
+
+            <span>
+                مش لازم البداية تكون مثالية
+                عشان توصلي لنهاية تفرحك.
+            </span>
+
+        </div>
+
+
+        <div class="reason">
+
+            <b>
+                متقارنيش نفسك
+            </b>
+
+            <span>
+                كل شخص له توقيته وطريقه،
+                والمهم إنك تكملي طريقك.
+            </span>
+
+        </div>
+
+
+        <div class="reason">
+
+            <b>
+                اتعلمي كل يوم
+            </b>
+
+            <span>
+                خطوة صغيرة كل يوم
+                ممكن تعمل فرق كبير
+                مع الوقت.
+            </span>
+
+        </div>
+
+
+        <div class="reason">
+
+            <b>
+                خلي عندك أمل
+            </b>
+
+            <span>
+                الحلم ممكن يتغير شكله،
+                لكن ده لا يعني إنه اختفى.
+            </span>
+
+        </div>
+
+
+        <div class="reason">
+
+            <b>
+                افتكري البداية
+            </b>
+
+            <span>
+                بعد فترة ممكن تبصي للصفحة دي
+                وتبتسمي على قد إنتِ وصلتي.
+            </span>
+
+        </div>
+
+
+    </div>
+
+
+    <button class="btn"
+            onclick="showSecret()">
+
+        اضغطي هنا ✨
+
+    </button>
+
+
+    <div class="secret"
+         id="secret">
+
+        أنا مؤمن إن عندك قدرة
+        تعملي حاجة جميلة جدًا
+        من المكان اللي إنتِ فيه دلوقتي. 🤍
+
+        <br><br>
+
+        متستنيش الطريق المثالي...
+
+        <br>
+
+        خلي طريقك هو اللي يبقى جميل.
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     النهاية
+========================= -->
+
+<section class="final">
+
+    <div class="m2">
+        M
+    </div>
+
+    <h2>
+        إلى مريم 🤍
+    </h2>
+
+    <p>
+
+        لو الدنيا أخدت منك الطريق
+        اللي كنتِ عايزاه،
+
+        <br>
+
+        متخليش ده ياخد منك
+        الرغبة إنك توصلي.
+
+    </p>
+
+
+    <p>
+
+        ابدئي من هنا،
+        واتعلمي،
+        وجربي،
+        واغلطي،
+        وارجعي حاولي تاني.
+
+    </p>
+
+
+    <p class="gold">
+
+        لسه قدامك صفحات كتير...
+
+        <br>
+
+        ولسه أجمل صفحة
+        ممكن تكون لسه مكتبتش.
+
+    </p>
+
+
+    <div class="signature">
+
+        — From someone who believes in you
+
+    </div>
+
+</section>
+
+
+
+<script>
+
+
+/* =========================
+   OPEN SECTIONS
+========================= */
+
+function openSection(id){
+
+    document
+        .getElementById(id)
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+}
+
+
+/* =========================
+   SECRET MESSAGE
+========================= */
+
+function showSecret(){
+
+    document
+        .getElementById("secret")
+        .classList.add("show");
+
+
+    createHearts();
+
+}
+
+
+/* =========================
+   HEARTS
+========================= */
+
+function createHearts(){
+
+    for(
+        let i=0;
+        i<18;
+        i++
+    ){
+
+        const heart =
+            document.createElement("div");
+
+
+        heart.className =
+            "float-heart";
+
+
+        heart.innerText =
+            Math.random() > .5
+            ? "♥"
+            : "♡";
+
+
+        heart.style.left =
+            Math.random()*100+"vw";
+
+
+        heart.style.fontSize =
+            (12+Math.random()*16)+"px";
+
+
+        document.body.appendChild(
+            heart
+        );
+
+
+        const duration =
+            3+Math.random()*3;
+
+
+        heart.animate(
+
+            [
+
+                {
+                    transform:
+                        "translateY(0)",
+
+                    opacity:1
+                },
+
+                {
+
+                    transform:
+                        `translateY(-${innerHeight+120}px)
+                         translateX(${Math.random()*160-80}px)`,
+
+                    opacity:0
+
+                }
+
+            ],
+
+            {
+
+                duration:
+                    duration*1000,
+
+                easing:"ease-out"
+
+            }
+
+        );
+
+
+        setTimeout(
+            ()=>heart.remove(),
+            duration*1000
+        );
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
